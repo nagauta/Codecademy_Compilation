@@ -1,6 +1,6 @@
-#REC001
+REC001
 
-#Overview
+Overview
 
 ## Description
 Rec 001 is recording application.
