@@ -231,4 +231,5 @@ dist/
 tmp/
 temp/
 
+assets/
 # End of https://www.gitignore.io/api/node
