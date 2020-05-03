@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="ja"
-{% load static %}>
+<html lang="ja">
+{% load static %}
+{% load render_bundle from webpack_loader %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{% static 'recording/favicon.ico' %}">
+    <link rel="icon" href="{% static 'recording/resources/favicon.ico' %}">
 
     <title>Recording App 001</title>
 
@@ -35,9 +36,14 @@
         <h1 class="cover-heading">picture your idea</h1>
         <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
         <p class="lead">
-          <a href="/admin" class="btn btn-lg btn-secondary">Rec</a>
+          <a href="#" id="btnRec" class="btn btn-lg btn-secondary" >Rec</a>
         </p>
       </main>
+      <audio id="Chomolungma"
+        src="{% static 'recording/resources/Chomolungma.m4a' %}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
@@ -54,5 +60,7 @@
     <script>window.jQuery || document.write('<script src="{% static \'recording/jquery-slim.min.js\' %"><\/script>')</script>
     <script src="{% static 'recording/popper.min.js' %}"></script>
     <script src="{% static 'recording/bootstrap.min.js' %}"></script>
+    <script src="{% static 'recording/Howler/howler.min.js' %}"></script>
+    <script src="{% static 'recording/Recorder.js' %}"></script>
   </body>
 </html>
