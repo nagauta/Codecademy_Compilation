@@ -1,0 +1,29 @@
+{
+  "name": "rec001",
+  "version": "1.0.0",
+  "description": "Rec 001 is recording application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mie035/Codecademy_Compilation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mie035/Codecademy_Compilation/issues"
+  },
+  "homepage": "https://github.com/mie035/Codecademy_Compilation#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "file-loader": "^6.0.0",
+    "webpack": "^4.43.0",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^3.3.11"
+  }
+}
